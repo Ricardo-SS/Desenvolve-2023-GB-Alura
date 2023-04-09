@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Valores Firebase</title>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a class="navbar-logo" href="#">
+            <h1>Sys<span class="logo-txt">MV</span></h1>
+            <!-- <img src="logo.png" alt="Logo"> -->
+          </a>
+          <div class="navbar-menu">
+            <a href="#">Início</a>
+            <a href="#">Suporte</a>
+            <a href="#">Sair</a>
+          </div>
+        </div>
+      </nav>
+      
+
+    <div class="container">
+      
+      <div class="card card-1">
+        <h2>Capacidade</h2>
+        <p><span id="capacidade"></span></p>
+      </div>
+      <div class="card card-2">
+        <h2>Disponível</h2>
+        <p><span id="disponivel"></span></p>
+      </div>
+      <div class="card card-3">
+        <h2>Última Atualização</h2>
+        <p><span id="data"></span> <span id="hora"></span></p>
+      </div>
+      <!-- <div class="card">
+        <h2>Hora</h2>
+        <p><span id="hora"></span></p>
+      </div> -->
+      <!-- inicio sidebar -->
+      <div class="sidebar">
+        <div class="card-side">
+          <h2>ID:</h2>
+          <p><span id="id-chip"></span></p>
+        </div>
+        <div class="card-side">
+          <h2>IP:</h2>
+          <p><span id="ip"></span></p>
+        </div>
+        <div class="card-side card-side-ll">
+          <h2>Abastecimento</h2>
+          <p>Último:</p>
+          <p>Próximo:</p>
+          <p><span id="latitude"></span></p>
+        </div>
+        <div class="card-side card-side-ll">
+          <h2>Localização</h2>
+          <p>Latitude:</p>
+          <p>Longitude:</p>
+          <p><span id="latitude"></span> <span id="longitude"></span></p>
+        </div>
+      </div> 
+      <!-- fim sidebar     -->
+    </div>
+  </body>
+  
+
+</html>
+

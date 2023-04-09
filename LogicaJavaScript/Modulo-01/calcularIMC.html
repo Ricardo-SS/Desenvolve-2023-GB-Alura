@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculo IMC</title>
+</head>
+<body>
+	<div class="container"></div>
+	<h1 style="background-color: aquamarine; width: 300px; text-align: center; border-radius: 8px;">Calculo IMC</h1>
+
+	<script>
+
+		function pulaLinha() {
+			document.write("<br>");
+			document.write("<br>");
+		}
+
+		function mostra (frase){
+			document.write(frase);
+			pulaLinha();
+		}
+
+        function calculaImc (altura, peso) {
+			//imc = imc.toFixed(2);
+			return (peso / (altura * altura));
+        }
+		var nome = prompt("Qual o seu nome?");
+		var alturaInformada = prompt(nome + ", qual a sua altura?");
+		var pesoInformado = prompt(nome + ", qual o seu peso?");
+
+		var imc = calculaImc(alturaInformada, pesoInformado);
+		
+		mostra(nome + ", Seu imc é " + imc.toFixed(2));
+
+		// programa para calcular imc: formula. peso / (altura * altura)
+
+		if (imc < 18.5) {
+			mostra("Seu IMC está baixo, se alimente melhor se possivel!");
+		}
+		if (imc > 35) {
+			mostra("Seu imc está alto, procure fazer uma dieta e praticar algum exercicio fisíco!");
+		}
+		if (imc >= 18.5 && imc <35) {
+			// if (imc < 35) {
+				mostra("Parabens, seu imc esta bom!");
+			// }
+		}
+
+	</script>
+</body>
+</html>
+

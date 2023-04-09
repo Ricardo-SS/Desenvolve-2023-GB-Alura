@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adivinhção</title>
+</head>
+<body>
+	<h1 style="background-color: aquamarine; width: 300px; text-align: center; border-radius: 8px;">Adivinha?</h1>
+
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        function sorteia(n) {
+            return Math.round(Math.random() * n);
+        }    
+
+        var numeroPensado = sorteia(10);
+        console.log(numeroPensado);
+
+        // aqui é estabelecido o total de chances que o usuario tem para tentar acertar
+        var tentativa=1;
+        while (tentativa <=3){
+
+            var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+            
+            if(chute == numeroPensado) {
+                mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+                break;      // se acertar o numero enserra o laço e sai
+                
+            } else {
+                
+                if(chute > numeroPensado) {
+                    mostra("Você errou! Seu chute é maior que o número pensado!");
+
+                } else {
+                    mostra("Você errou! Seu chute é menor que o número pensado!");
+                }
+            }
+            tentativa++;
+        }
+        mostra("FIM")
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>JavaScript</title>
+</head>
+<body>
+	<h1>Calculo de gerações</h1>
+
+	<script>
+		function pulaLinha() {
+			document.write("<br>");
+			document.write("<br>");
+		}
+
+		function mostra (frase){
+			document.write(frase);
+			pulaLinha();
+		}
+
+		var anoInicial = 1500;
+		var anoAtual = 2022;
+
+		mostra("O barsil tem : " + ((2023-1500)/28).toFixed(2) + " gerações");
+
+	</script>
+</body>
+</html>
+

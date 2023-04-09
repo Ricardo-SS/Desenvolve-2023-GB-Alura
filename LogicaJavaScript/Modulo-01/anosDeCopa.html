@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Copa</title>
+</head>
+<body>
+	<h1 style="background-color: aquamarine; width: 300px; text-align: center; border-radius: 8px;">Copa</h1>
+
+	<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    mostra("O primeiro ano de copa foi 1930, a copa acontece a cada 4 anos, <br> esses são os anos que tiveram copa.");
+
+    var anoAtual = parseInt(prompt("Digite até qual ano que ver: "));
+    var copa = 1930;
+
+    while (copa <= anoAtual) {
+        mostra("Tivemos compa em: " + copa);
+        copa = copa+4;
+    }
+
+    mostra("FIM");
+    
+    </script>
+</body>
+</html>
+

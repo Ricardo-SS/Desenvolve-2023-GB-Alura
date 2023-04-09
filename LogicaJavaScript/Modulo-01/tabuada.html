@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Taboada intereativa</title>
+</head>
+<body>
+	<h1 style="background-color: aquamarine; width: 300px; text-align: center; border-radius: 8px;">Taboada interativa</h1>
+
+    <script>
+
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    pulaLinha();
+    }
+    var operação = parseInt(prompt("Digite: 1 para soma, 2 para subtração, 3 para multiplicação, 4 para divisão "))
+    var numero = parseInt(prompt("Digite o numero para vera a taboada: "));
+    var i = 1;
+    if (operação == 1){
+        for(i; i <= 10; i++) {
+            mostra(numero + " + " + (i) + " = " + (numero + i));
+        }
+    }
+
+    if (operação == 2){
+        for(i; i <= 10; i++) {
+            mostra(numero + " - " + (i) + " = " + (numero - i));
+        }
+    }
+
+    if (operação == 3){
+        for(i; i <= 10; i++) {
+            mostra(numero + " x " + (i) + " = " + (numero * i));
+        }
+    }
+
+    if (operação == 4){
+        for(i; i <= 10; i++) {
+            mostra(numero + " / " + (i) + " = " + (numero / i).toFixed(2));
+        }
+    }
+    mostra("FIM")
+
+    </script>
+</body>
+</html>
