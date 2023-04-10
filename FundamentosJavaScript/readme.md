@@ -1,4 +1,4 @@
-<h1> Projeto educacional Desenvolver 2023. </h1>
+<h1> Projeto educacional Desenvolve 2023. </h1>
 
 <p> Promovido por: Grupo Boticário </p>
 
