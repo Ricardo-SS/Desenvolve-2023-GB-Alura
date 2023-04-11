@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+    <title>Document</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img class="logo-img" src="perfil-02.jpg" alt="foto de perfil">
+            <span>Ricardo</span>
+        </header>
+
+        <nav class="">
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">home</i>
+                    <span>Home</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class="material-symbols-outlined"> explore </i>
+                    <span>Explorar</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class="material-symbols-outlined"> email </i>
+                    <span>Suporte</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class="material-symbols-outlined"> person </i>
+                    <span>Perfil</span>
+                </span>
+            </button>
+
+        </nav>
+    </aside>
+
+    <!-- criando menu mobile -->
+    <button class="button-mobile">
+        <i class="material-symbols-outlined" onclick="toggleMenu()"> menu </i>
+        <span>Menu</span>
+    </button>
+
+    <nav class="menu-mobile" id="menu-mobile">
+        <button class="button-close" onclick="toggleMenu()">
+            <span>
+                <i class="material-symbols-outlined"> close </i>
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <i class="material-symbols-outlined">home</i>
+                <span class="mobile-text">Home</span>
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <i class="material-symbols-outlined"> explore </i>
+                <span class="mobile-text">Explorar</span>
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <i class="material-symbols-outlined"> email </i>
+                <span class="mobile-text">Suporte</span>
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <i class="material-symbols-outlined"> person </i>
+                <span class="mobile-text">Perfil</span>
+            </span>
+        </button>
+    </nav>
+
+    <main class="main">
+        <h1>Bem vindos ao site</h1>
+        <span>@ricardoss7</span>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
