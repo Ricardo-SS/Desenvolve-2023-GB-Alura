@@ -20,7 +20,7 @@ class ClientePoupanca extends Cliente {
         super(nome, email, cpf, saldo)
         this.saldoPoupanca = saldoPoupanca
     }
-
+    // comportamento é um funcao
     depositarPoupanca(valor) {
         this.saldoPoupanca += valor
     }
