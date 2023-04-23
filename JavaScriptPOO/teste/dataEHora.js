@@ -16,9 +16,9 @@ console.log(typeof dataEHora)
 
 
 //  outros metodos
-console.log(dataEHora.getSeconds())
-console.log(dataEHora.getMinutes())
-console.log(dataEHora.getHours())
-console.log(dataEHora.getDay())
+console.log(dataEHora.getSeconds())     // pega os segundos
+console.log(dataEHora.getMinutes())     //pega os minutos
+console.log(dataEHora.getHours())       //pega as horas
+console.log(dataEHora.getDay())         //pega 
 console.log(dataEHora.getMonth())
 console.log(dataEHora.getFullYear())

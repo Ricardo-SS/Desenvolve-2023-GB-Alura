@@ -1,6 +1,0 @@
-console.log(dataEHora.getSeconds())
-// console.log(dataEHora.getMinutes())
-// console.log(dataEHora.getHours())
-// console.log(dataEHora.getDay())
-// console.log(dataEHora.getMonth())
-// console.log(dataEHora.getFullYear())
