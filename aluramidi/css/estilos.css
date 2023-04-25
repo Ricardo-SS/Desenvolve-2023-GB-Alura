@@ -1,7 +1,7 @@
 :root {
   --cinza: #aaa;
-  --vermelha: #e93d50;
-  --vermelha-escura: #af303f;
+  --verde: #5ae93d;
+  --verde-escuro: #128b07;
   --branca: #fff;
   --luz: rgb(229, 255, 0);
 }
@@ -36,7 +36,7 @@ h1 {
   background-color: var(--branca);
   border-radius: 20px;
   box-shadow: 3px 3px 0 var(--cinza);
-  color: var(--vermelha);
+  color: var(--verde-escuro);
   cursor: pointer;
   height: 120px;
   font-size: 1.75em;
@@ -48,9 +48,9 @@ h1 {
 
 .tecla.ativa,
 .tecla:active {
-  background-color: var(--vermelha);
-  border: 4px solid  var(--vermelha);
-  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  background-color: var(--verde);
+  border: 4px solid  var(--verde);
+  box-shadow: 3px 3px 0 var(--verde-escuro) inset;
   color: var(--branca);
   outline: none;
 }
@@ -63,5 +63,5 @@ h1 {
 
 .tecla.active:focus,
 .tecla:active:focus {
-  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+  box-shadow: 3px 3px 0 var(--verde-escuro) inset, 1px 1px 10px var(--luz);
 }
