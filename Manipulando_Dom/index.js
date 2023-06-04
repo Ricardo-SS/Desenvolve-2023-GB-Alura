@@ -1,1 +1,1 @@
-document.getElementById('texto').innerText="Escreva o texto aqui"
+document.getElementById('texto').innerText="teste"
