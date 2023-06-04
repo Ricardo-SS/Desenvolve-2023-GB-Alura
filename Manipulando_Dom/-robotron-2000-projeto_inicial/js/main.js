@@ -14,19 +14,19 @@ const pecas = {
         "energia": 0,
         "velocidade": -20
     },
-    "nucleos":{
+    "nucleos": {
         "forca": 0,
         "poder": 7,
         "energia": 48,
         "velocidade": -24
     },
-    "pernas":{
+    "pernas": {
         "forca": 27,
         "poder": 21,
         "energia": -32,
         "velocidade": 42
     },
-    "foguetes":{
+    "foguetes": {
         "forca": 0,
         "poder": 28,
         "energia": 0,
@@ -34,18 +34,18 @@ const pecas = {
     }
 }
 
-controle.forEach( (elemento) => {
+controle.forEach((elemento) => {
     elemento.addEventListener("click", (evento) => {
         manipulaDado(evento.target.dataset.controle, evento.target.parentNode)
         atualizaEstatisticas(evento.target.dataset.peca)
     })
 })
 
-function manipulaDado (operacao, controle) {
+function manipulaDado(operacao, controle) {
     const peca = controle.querySelector("[data-contador]");
 
-    if (operacao === "-"){
-        peca.value = parseInt(peca.value) - 1; 
+    if (operacao === "-") {
+        peca.value = parseInt(peca.value) - 1;
     } else {
         peca.value = parseInt(peca.value) + 1;
     }
@@ -54,7 +54,7 @@ function manipulaDado (operacao, controle) {
 function atualizaEstatisticas(peca) {
     console.log(pecas[peca])
 
-    estatisticas.forEach( (elemento) => {
+    estatisticas.forEach((elemento) => {
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
     })
 }
