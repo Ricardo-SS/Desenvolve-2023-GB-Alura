@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #BBBBBB;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 940px;
+    padding: 8px;
+    margin: 0 auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.imagemLogo {
+    width: 40px;
+    margin-right: 4px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+}
+
+/* main */
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: url("/img/bg.jpg");
+    padding: 10px 0;
+}
+
+footer img {
+    width: 172px;
+}
+
+.Copyright {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 20px 0 0 0;    
+}
