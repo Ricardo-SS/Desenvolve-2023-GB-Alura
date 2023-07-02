@@ -21,7 +21,6 @@ class Usuario {
     return usuariosDao.adiciona(this);
   }
 
-  //metodo para adicionar senha hash no bd
   async adicionaSenha(senha) {
     validacoes.campoStringNaoNulo(senha, 'senha');
     validacoes.campoTamanhoMinimo(senha, 'senha', 8);
@@ -35,33 +34,32 @@ class Usuario {
     validacoes.campoStringNaoNulo(this.email, 'email');
   }
 
-  
   async deleta() {
     return usuariosDao.deleta(this);
   }
-  
+
   static async buscaPorId(id) {
     const usuario = await usuariosDao.buscaPorId(id);
     if (!usuario) {
       return null;
     }
-    
+
     return new Usuario(usuario);
   }
-  
+
   static async buscaPorEmail(email) {
     const usuario = await usuariosDao.buscaPorEmail(email);
     if (!usuario) {
       return null;
     }
-    
+
     return new Usuario(usuario);
   }
 
   static lista() {
     return usuariosDao.lista();
   }
-  //cria hash da senha e define custo de 2^12
+
   static gerarSenhaHash(senha) {
     const custoHash = 12;
     return bcrypt.hash(senha, custoHash);
